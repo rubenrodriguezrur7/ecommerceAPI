@@ -9,7 +9,7 @@ test('POST /users debe crear un usuario', async () => {
         firstName: "Brian",
         lastName: "Rodriguez",
         password: "12345",
-        email: "bria@gmail.com",
+        email: "brian3@gmail.com",
         phone: "3111"
     }
     const res = await request(app).post('/users').send(user);
@@ -22,7 +22,7 @@ test('POST /users debe crear un usuario', async () => {
 
 test('POST /users/login', async () => {
     const body = {
-        email: "brian@gmail.com",
+        email: "brian3@gmail.com",
         password: "12345"
     }
     const res = await request(app).post('/users/login').send(body);
