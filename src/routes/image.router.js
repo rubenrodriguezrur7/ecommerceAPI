@@ -6,12 +6,12 @@ const verifyJWT = require('../utils/verifyJWT');
 const imageRouter = express.Router();
 
 imageRouter.route('/')
-    .get(getAll)
+    .get(verifyJWT, getAll)
 
 imageRouter.route('/')
     .post(verifyJWT, upload.single('image'), create);
 
 imageRouter.route('/:id')
-    .delete(remove)
+    .delete(verifyJWT, remove)
 
 module.exports = imageRouter;

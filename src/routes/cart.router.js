@@ -15,4 +15,3 @@ cartRouter.route('/:id')
 
 module.exports = cartRouter;
 
-/*LIMPIO*/

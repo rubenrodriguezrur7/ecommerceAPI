@@ -40,7 +40,7 @@ test('POST /users/login credenciales incorrectas', async () => {
     expect(res.status).toBe(401);
 });
 
-test('GET /users debe traer todas las usuarios', async () => {
+test('GET /users debe traer todos las usuarios', async () => {
     const res = await request(app).get('/users').set('Authorization', `Bearer ${token}`);
     expect(res.status).toBe(200);
     expect(res.body).toBeInstanceOf(Array);

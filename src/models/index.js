@@ -18,9 +18,9 @@ Cart.belongsTo(User);
 Product.hasMany(Cart);
 Cart.belongsTo(Product);
 
-Purchase.belongsTo(Product);
 Product.hasMany(Purchase);
+Purchase.belongsTo(Product);
 
-Purchase.belongsTo(User);
 User.hasMany(Purchase);
+Purchase.belongsTo(User);
 

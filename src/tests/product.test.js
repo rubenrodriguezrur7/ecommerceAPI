@@ -59,5 +59,3 @@ test('DELETE /products/:id debe eliminar un producto', async () => {
     expect(res.status).toBe(204);
 });    
 
-
-/*LIMPIO*/

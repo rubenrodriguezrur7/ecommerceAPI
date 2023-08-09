@@ -12,7 +12,7 @@ router.use('/users', userRouter)
 router.use('/categories', categoryRouter)
 router.use('/products', productRouter)
 router.use('/images', imageRouter)
-router.use('/carts', cartRouter)
+router.use('/cart', cartRouter)
 router.use('/purchases', purchaseRouter)
 
 

@@ -18,4 +18,3 @@ productRouter.route('/:id/images')
 
 module.exports = productRouter;
 
-/*LIMPIO*/
